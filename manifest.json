@@ -1,0 +1,36 @@
+{
+  "name": "ANDESAPS-MAC Official",
+  "short_name": "ANDESAPS",
+  "description": "Association Nationale pour le Développement Économique, Social, Éducatif, Agricole, la Paix et la Solidarité",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#0B6E4F",
+  "lang": "fr",
+  "dir": "ltr",
+
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+
+  "categories": [
+    "education",
+    "charity",
+    "business",
+    "social",
+    "news"
+  ]
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Actualités - ANDESAPS-MAC</title>
+
+<link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>ANDESAPS-MAC</h2>
+
+<a href="dashboard.html">🏠 Dashboard</a>
+<a href="members.html">👥 Membres</a>
+<a href="projects.html">🌱 Projets</a>
+<a href="donations.html">💰 Donations</a>
+<a href="news.html">📰 Actualités</a>
+<a href="settings.html">⚙ Paramètres</a>
+
+</div>
+
+<div class="content">
+
+<h1>Actualités & Informations</h1>
+
+<form id="newsForm">
+
+<input type="text" id="title" placeholder="Titre de l'actualité" required>
+
+<textarea id="message" placeholder="Message / description" required></textarea>
+
+<button type="submit">Publier</button>
+
+</form>
+
+<div id="newsList"></div>
+
+</div>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,786 @@
+/* =====================================================
+   ANDESAPS-MAC OFFICIAL WEBSITE
+   PROFESSIONAL NGO THEME
+   PART 1
+===================================================== */
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:#f7f9fb;
+color:#222;
+line-height:1.7;
+
+}
+
+/* COLORS */
+
+:root{
+
+--primary:#0B5D3B;
+--secondary:#D4AF37;
+--light:#ffffff;
+--dark:#17332d;
+--gray:#eef2f5;
+--text:#444;
+
+}
+
+/* CONTAINER */
+
+.container{
+
+width:90%;
+max-width:1400px;
+margin:auto;
+
+}
+
+/* HEADER */
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:white;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+z-index:999;
+
+}
+
+header .container{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+
+}
+
+/* LOGO */
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:15px;
+
+}
+
+.logo img{
+
+width:70px;
+height:70px;
+object-fit:contain;
+
+}
+
+.logo-text h1{
+
+font-size:28px;
+color:var(--primary);
+
+}
+
+.logo-text p{
+
+font-size:13px;
+color:#666;
+
+}
+
+/* NAVIGATION */
+
+nav ul{
+
+display:flex;
+list-style:none;
+gap:25px;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+font-weight:600;
+color:#333;
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:var(--primary);
+
+}
+
+/* HERO */
+
+.hero{
+
+margin-top:100px;
+height:90vh;
+
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("images/hero1.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+color:white;
+
+padding:20px;
+
+}
+
+.hero-content{
+
+max-width:900px;
+
+}
+
+.hero-logo{
+
+width:140px;
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:58px;
+margin-bottom:20px;
+
+}
+
+.hero h2{
+
+font-size:28px;
+font-weight:400;
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+font-size:20px;
+margin-bottom:40px;
+
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+background:var(--secondary);
+color:#000;
+
+padding:16px 35px;
+
+border-radius:40px;
+
+text-decoration:none;
+
+font-weight:700;
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+background:white;
+
+transform:translateY(-4px);
+
+}
+
+.btn2{
+
+background:var(--primary);
+
+color:white;
+
+padding:16px 35px;
+
+border-radius:40px;
+
+text-decoration:none;
+
+font-weight:700;
+
+transition:.4s;
+
+}
+
+.btn2:hover{
+
+background:#0d7d4d;
+
+transform:translateY(-4px);
+
+}
+
+/* SLIDER */
+
+.slider{
+
+padding:60px 0;
+
+background:white;
+
+}
+
+.slides{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+}
+
+.slides img{
+
+width:100%;
+
+height:320px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+transition:.4s;
+
+}
+
+.slides img:hover{
+
+transform:scale(1.03);
+
+}
+
+/* SECTION TITLE */
+
+section{
+
+padding:90px 0;
+
+}
+
+section h2{
+
+text-align:center;
+
+font-size:42px;
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}
+
+.subtitle{
+
+text-align:center;
+
+max-width:850px;
+
+margin:auto;
+
+color:#666;
+
+margin-bottom:50px;
+
+font-size:18px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+header .container{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero{
+
+height:auto;
+
+padding:140px 20px 100px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero h2{
+
+font-size:22px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.slides{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/* =====================================================
+   PART 2
+   FOUNDER + WELCOME + ABOUT + BENEFICIARIES + PROJECTS
+===================================================== */
+
+/* WELCOME */
+
+.welcome{
+background:#fff;
+}
+
+.welcome p{
+max-width:900px;
+margin:20px auto;
+text-align:center;
+font-size:18px;
+color:#555;
+}
+
+.welcome-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:50px;
+}
+
+.box{
+background:#fff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+text-align:center;
+transition:.3s;
+}
+
+.box:hover{
+transform:translateY(-8px);
+}
+
+.box i{
+font-size:45px;
+color:var(--primary);
+margin-bottom:20px;
+}
+
+.box h3{
+color:var(--primary);
+margin-bottom:10px;
+}
+
+/* FOUNDER */
+
+.fondateur{
+background:#f7f9fb;
+}
+
+.fondateur-box{
+background:#fff;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+max-width:1100px;
+margin:auto;
+}
+
+.fondateur-photo{
+text-align:center;
+margin-bottom:30px;
+}
+
+.fondateur-photo img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid var(--secondary);
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.fondateur h3{
+text-align:center;
+color:var(--primary);
+margin:20px 0;
+font-size:30px;
+}
+
+.signature{
+margin-top:30px;
+font-weight:bold;
+text-align:right;
+color:var(--primary);
+}
+
+/* ABOUT */
+
+.about-preview{
+background:white;
+}
+
+.about-preview p{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:18px;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:50px;
+}
+
+.about-box{
+background:#f8f8f8;
+padding:30px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+.about-box:hover{
+background:var(--primary);
+color:white;
+}
+
+.about-box h3{
+margin-bottom:15px;
+}
+
+/* BENEFICIAIRES */
+
+.beneficiaires{
+background:#eef6f2;
+}
+
+.beneficiaires ul{
+max-width:800px;
+margin:40px auto;
+}
+
+.beneficiaires li{
+background:white;
+margin:12px 0;
+padding:18px;
+border-left:6px solid var(--primary);
+border-radius:8px;
+list-style:none;
+}
+
+/* PROJETS */
+
+.projets{
+background:#fff;
+}
+
+.projets .grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.projets .card{
+background:white;
+padding:22px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+font-weight:600;
+transition:.3s;
+border-top:4px solid var(--secondary);
+}
+
+.projets .card:hover{
+background:var(--primary);
+color:white;
+transform:translateY(-6px);
+}
+/* =====================================================
+   PART 3
+   GALLERY + PARTNERS + TRANSPARENCY + DOCUMENTS
+   FAQ + IMPACT + TESTIMONIALS + EVENTS + NEWS
+   FOOTER (NGO FINAL POLISH)
+===================================================== */
+
+/* ================= GALLERY ================= */
+
+.galerie{
+background:#fff;
+}
+
+.galerie .grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.galerie .img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+transition:.3s;
+}
+
+.galerie .img:hover{
+transform:scale(1.05);
+}
+
+/* ================= PARTNERS ================= */
+
+.partners{
+background:#f7f9fb;
+}
+
+.partner-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.partner-card{
+background:#fff;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.partner-card:hover{
+transform:translateY(-8px);
+background:var(--primary);
+color:white;
+}
+
+.partner-card i{
+font-size:40px;
+color:var(--secondary);
+margin-bottom:15px;
+}
+
+/* ================= TRANSPARENCY ================= */
+
+.transparence{
+background:#eef6f2;
+text-align:center;
+}
+
+.transparence .grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.transparence .card{
+padding:25px;
+border-top:4px solid var(--primary);
+}
+
+/* ================= DOCUMENTS ================= */
+
+.documents{
+background:#fff;
+}
+
+.documents .card{
+text-align:center;
+font-weight:600;
+padding:25px;
+border-left:5px solid var(--secondary);
+}
+
+/* ================= FAQ ================= */
+
+.faq{
+background:#f7f9fb;
+}
+
+.faq .card{
+margin:15px auto;
+max-width:800px;
+text-align:left;
+}
+
+.faq strong{
+color:var(--primary);
+}
+
+/* ================= IMPACT ================= */
+
+.impact{
+background:#fff;
+}
+
+.impact .grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.impact .card h1{
+font-size:40px;
+color:var(--primary);
+}
+
+/* ================= TESTIMONIALS ================= */
+
+.temoignages{
+background:#eef6f2;
+}
+
+.temoignages .card{
+font-style:italic;
+}
+
+/* ================= EVENTS ================= */
+
+.events{
+background:#fff;
+}
+
+.events .card{
+text-align:center;
+border-top:4px solid var(--secondary);
+}
+
+/* ================= LATEST NEWS ================= */
+
+.latest-news{
+background:#f7f9fb;
+}
+
+.latest-news .card{
+text-align:left;
+}
+
+.latest-news a{
+display:inline-block;
+margin-top:10px;
+color:var(--primary);
+font-weight:600;
+}
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter{
+background:var(--primary);
+color:white;
+text-align:center;
+}
+
+.newsletter input{
+padding:12px;
+border:none;
+border-radius:8px;
+width:250px;
+margin-right:10px;
+}
+
+.newsletter button{
+background:var(--secondary);
+color:black;
+padding:12px 20px;
+border:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+/* ================= VALUES ================= */
+
+.values{
+background:#fff;
+}
+
+.values .card{
+font-weight:600;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+background:linear-gradient(135deg,var(--primary),#0d7d4d);
+color:white;
+text-align:center;
+padding:100px 20px;
+}
+
+.cta a{
+margin:10px;
+display:inline-block;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+background:#0b3d2e;
+color:white;
+text-align:center;
+padding:40px 20px;
+margin-top:50px;
+}
+
+footer p{
+opacity:0.9;
+}

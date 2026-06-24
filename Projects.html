@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Projects | ANDESAPS-MAC</title>
+
+<link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>ANDESAPS-MAC</h2>
+
+<a href="dashboard.html">🏠 Dashboard</a>
+<a href="members.html">👥 Membres</a>
+<a href="projects.html">🌱 Projets</a>
+<a href="donations.html">💰 Donations</a>
+<a href="news.html">📰 Actualités</a>
+<a href="settings.html">⚙ Paramètres</a>
+
+</div>
+
+<div class="content">
+
+<h1>Gestion des Projets</h1>
+
+<form id="projectForm">
+
+<input
+type="text"
+id="projectName"
+placeholder="Nom du projet"
+required>
+
+<textarea
+id="projectDescription"
+placeholder="Description du projet"
+required>
+</textarea>
+
+<button type="submit">
+
+Ajouter le projet
+
+</button>
+
+</form>
+
+<table id="projectTable">
+
+<thead>
+
+<tr>
+
+<th>Projet</th>
+
+<th>Description</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>

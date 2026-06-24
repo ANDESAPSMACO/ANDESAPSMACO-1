@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Donations | ANDESAPS-MAC</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<
+
+<h2>ANDESAPS-MAC</h2>
+
+</div>
+
+<nav>
+
+<a href="index.html">Accueil</a>
+<a href="governance.html">Gouvernance</a>
+<a href="transparency.html">Transparence</a>
+<a href="members.html">Membres</a>
+<a href="donation.html" class="active">Donations</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Soutenez Notre Mission</h1>
+
+<p>
+
+Chaque contribution aide à transformer des vies et à développer des communautés en République Démocratique du Congo.
+
+</p>
+
+</section>
+
+<section class="container">
+
+<h2>Faire un Don</h2>
+
+<form onsubmit="event.preventDefault(); addDonation(donor.value,amount.value); this.reset();">
+
+<input
+type="text"
+name="donor"
+placeholder="Votre nom"
+required>
+
+<input
+type="number"
+name="amount"
+placeholder="Montant (FC)"
+required>
+
+<button type="submit">
+Faire un Don
+</button>
+
+</form>
+
+</section>
+
+<section class="container">
+
+<h2>Historique Public des Donations</h2>
+
+<div id="donationList" class="grid">
+
+<!-- Les donations apparaîtront automatiquement ici -->
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2>Statistiques des Contributions</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h1 id="totalDonations">0 FC</h1>
+
+<p>Total des contributions</p>
+
+</div>
+
+<div class="card">
+
+<h1>100%</h1>
+
+<p>Transparence financière</p>
+
+</div>
+
+<div class="card">
+
+<h1>24/7</h1>
+
+<p>Réception des dons</p>
+
+</div>
+
+<div class="card">
+
+<h1>100</h1>
+
+<p>Projets à soutenir</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2>Modes de Donation</h2>
+
+<div class="grid">
+
+<div class="card">
+📱 Airtel Money (À venir)
+</div>
+
+<div class="card">
+📱 Orange Money (À venir)
+</div>
+
+<div class="card">
+💳 Carte Bancaire (À venir)
+</div>
+
+<div class="card">
+🌍 PayPal (À venir)
+</div>
+
+<div class="card">
+🏦 Virement Bancaire (À venir)
+</div>
+
+<div class="card">
+🤝 Don en matériel ou volontariat
+</div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2>Notre Engagement</h2>
+
+<p>
+
+Toutes les donations sont enregistrées, suivies et publiées dans le respect des principes de transparence et de bonne gouvernance de l'ANDESAPS-MAC.
+
+</p>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 ANDESAPS-MAC - Tous droits réservés.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
